@@ -4,7 +4,7 @@ Esta es la primera entrega del Proyecto Final
 
 ## Comenzando 🚀
 
-La persistencia está implementada con File System e NODE
+La persistencia está implementada con MongoDb e NODE
 
 ## Pre-requisitos 📋
 
