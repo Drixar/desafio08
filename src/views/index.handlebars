@@ -1,0 +1,100 @@
+<div class='container'>
+  <div class='row'>
+    <div class='col col-sm-7 text-center'>
+      {{! <h1 class="text-center mt-3">Ingrese datos</h1> }}
+      <!-- <form action='/' method='post' class='container col-sm-12' id="productForm">
+                <div class="row mb-2">
+                    <div class="col">
+                        <div class="form-outline">                            
+                            <label for='title' class='form-label'>Title</label>
+                            <input type='text' class='form-control' id='title' name='title'
+                                placeholder="Ingrese el Nombre del producto" required />
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="form-outline">
+                            <label for='price' class='form-label'>Price</label>
+                            <input type='text' class='form-control' id='price' name='price'
+                                placeholder="Ingrese el Precio del producto" required />
+                        </div>
+                    </div>
+                </div>
+                <div class="form-outline mb-2">
+                    <label for='thumbnail' class='form-label'>Thumbnail</label>
+                    <input type='text' class='form-control' id='thumbnail' name='thumbnail'
+                        placeholder="Ingrese la dirección de la Imagen del producto" required />
+                </div>
+                <button type='submit' class='btn btn-primary mb-3'>Agregar</button>
+
+            </form> -->
+      <div class='text-center'>
+        <div class='col col-sm-12 text-center'>
+          <h1 class='text-center mt-7'>Listado de Productos</h1>
+          {{!-- <table class='table'>
+            <thead>
+              <tr class='table-primary'>
+                <th scope='col'>Code</th>
+                <th scope='col'>Title</th>
+                <th scope='col'>Price</th>
+                <th scope='col'>thumbnail</th>
+              </tr>
+            </thead>
+            <tbody>
+              {{#each productos}}
+                <tr>
+                  <th scope='row'>{{this.code}}</th>
+                  <td>{{this.title}}</td>
+                  <td>{{this.price}}</td>
+                  <td>
+                    <img src={{this.thumbnail}} alt='' width='30' />
+                  </td>
+                </tr>
+              {{/each}}
+            </tbody>
+          </table> --}}
+          <div id="productsContainer"></div>
+        </div>
+      </div>
+    </div>
+
+    <div class='col col-sm-4 mb-2 bg-secondary text-white'>
+      <h2>Chat</h2>
+      <div class='row'>
+        <div class='col col-sm-7 text-center'>
+          <input type='text' id='messageField' />
+        </div>
+        <div class='col col-sm-4 text-center'>
+          <button
+            type='submit'
+            class='btn btn-primary mx-3'
+            id='sendBoton'
+          >Enviar</button>
+        </div>
+      </div>
+
+      <div id='messageContainer'></div>
+    </div>
+
+  </div>
+</div>
+
+{{!-- <div class='row'>
+
+  <div class='col col-sm-4 mb-2 bg-secondary text-white'>
+    <h2>Chat</h2>
+    <div class='row'>
+      <div class='col col-sm-7 text-center'>
+        <input type='text' id='messageField' />
+      </div>
+      <div class='col col-sm-4 text-center'>
+        <button
+          type='submit'
+          class='btn btn-primary mx-3'
+          id='sendBoton'
+        >Enviar</button>
+      </div>
+    </div>
+
+    <div id='messageContainer'></div>
+  </div>
+</div> --}}
